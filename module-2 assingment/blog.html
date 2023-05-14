@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .h31 {
+            text-align: center;
+            font-style: italic;
+            font-size: 40px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /*button desing*/
+        .btn-1 {
+            margin: 10px;
+            padding: 10px;
+            background-color: black;
+            color: wheat;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="h31">Blog Page</h3>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>Title description</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <img src="/back.jpg" alt="" height="170px" width="auto">
+                </div>
+                <button class="btn-1">Read More</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis corrupti ad nihil adipisci
+                    tenetur! Eveniet, fugit quae. Quae, illum!.</p>
+            </div>
+            <div class="card">
+                <h2>Title Heading</h2>
+                <h5>Title description</h5>
+                <div class="fakeimg" style="height:200px;"><img src="/back.jpg" alt="" height="170px" width="auto">
+                </div>
+                <button class="btn-1">Read More</button>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum eaque consequatur ipsa officia
+                    praesentium tempora eos distinctio et voluptatum? Est, qui obcaecati voluptas culpa modi eaque
+                    asperiores consequuntur. Commodi, reiciendis..</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">
+                    <img src="/MAHFUJ (1).jpeg" alt="" height="50px" width="auto">
+                </div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">World Vlog</div><br>
+                <div class="fakeimg">Situation </div><br>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>My Name Is Mahfuj......</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
