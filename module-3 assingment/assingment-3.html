@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h2>Generate Table</h2>
+    <label>Enter Number</label>
+    <input type="number" id="number" />
+    <input type="button" value="generate" onclick="multiplicationTable()" />
+    <br /><br /><br />
+    <div id="result"></div>
+
+    <script>
+
+        function multiplicationTable() {
+            var table;
+            table = '<table id="mtable">';
+
+            var num = document.getElementById("number").value;
+            if (num == null || num == "")
+                num = 5;
+            for (i = 1; i <= 10; i++) {
+                table += '<tr><td>' + num + '*' + i + '=' + num * i + '</td></tr>';
+            }
+
+            table += '</table>';
+            document.getElementById("result").innerHTML = table;
+        }
+    </script>
+</body>
+
+</html>
